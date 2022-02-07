@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <style>
+		.container{
+			width: 210px;
+			border: 1px solid black;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		.titles{
+			width: 200px;
+			padding: 10px;
+			}
+
+        .forma{	
+         	margin:10px;
+	        padding: 10px;
+	        width: 320px;
+	        height:330px;
+         }
+
+        .form_1,.textarea{
+	       border-radius: 5px;
+	       width: 170px;
+        }
+
+        .submit{
+		  width: 100px;
+	      height: 30px;
+		  border-radius: 5px;
+		  font-weight: 800;
+		  font-style: italic;
+        }
+		.txt{
+		  color: darkblue;
+		  font-weight: 800;
+		}
+
+        .form_1 h2{
+		  width: 200px;
+	      text-align: center;
+		  color: blueviolet;
+		  font-style: italic;
+        }
+		.submit{
+			align-items:center;
+		}
+    </style>
+</head>
+<body>
+	<div class="container">
+    <form name="forma" action="" method="post" class="form_1">
+		<h2>Форма обратной связи.</h2>
+		<p class="txt"> <div class="titles">Введите Ваше имя</div> <input class="input" name="name" type="text"/> </p> 
+		<p class="txt"> <div class="titles">Электронная почта</div> <input class="input" name="email" type="text"/> </p>
+		<p class="txt"> <div class="titles">Тема сообщения:</div> <input class="input" name="subjects" type="text"/> </p>
+		<p class="txt"> <div class="titles">Текст сообщения:</div><textarea name="msg" cols="22" rows="10" /></textarea></p>
+		<p class="txt"><input class="submit" value="Отправить" type="submit" /></p>
+	</form>
+    </div>
+    
+</body>
+</html>
